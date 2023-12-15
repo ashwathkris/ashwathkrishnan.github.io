@@ -139,18 +139,21 @@ body{
 
 .project-title{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
+    font-size: 1.5em;
     text-align: justify;
 }
 
 .project-intro{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:small;
+    font-size: 1em;;
     text-align: justify;
 }
 
 .links a{
     text-decoration: none;
+    color: 660080;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .links{
@@ -161,7 +164,7 @@ body{
 
 .tech{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 12px;
+    font-size: 1em;
     color: gray;
 }
 
