@@ -126,15 +126,13 @@ body{
     background-color:white;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    width: 100%;
 }
 
 .card{
     background-color: #e6f2ff;
     border-radius: 10px;
-    width: 90%;
     margin: 15px;
     padding: 20px;
 }
