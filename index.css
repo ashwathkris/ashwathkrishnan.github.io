@@ -27,10 +27,12 @@ body{
     font-size: 20px;
     border-radius: 25px;
     margin: 10px;
+    transition: transform 1s;
 }
 
 .ref:hover {
     background-color:darkgrey;
+    transform: scale(1.15);
 }
 
 .left{
@@ -70,11 +72,16 @@ body{
 
 .social{
     margin: 0px;
+    transition: transform 1s;
 }
 .social img{
     width: 50px;
     margin: 20px;
     border-radius: 10px;
+}
+
+.social:hover{
+    transform: scale(1.15);
 }
 
 .edu{
