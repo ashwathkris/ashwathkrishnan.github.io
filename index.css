@@ -59,7 +59,7 @@ body{
     margin: 10px 30px 10px 30px;
     text-align: justify;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
 }
 
@@ -81,7 +81,7 @@ body{
 }
 
 .social:hover{
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 .edu{
