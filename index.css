@@ -25,14 +25,14 @@ body{
     padding: 15px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
-    border-radius: 25px;
+    border-radius: 5px;
     margin: 10px;
     transition: transform 1s;
 }
 
 .ref:hover {
     background-color:darkgrey;
-    transform: scale(1.15);
+    transform: scale(1.02);
 }
 
 .left{
@@ -50,7 +50,7 @@ body{
 
 .right img{
     width: 50%;
-    border-radius: 30%;
+    border-radius: 5%;
 }
 
 .intro{
@@ -85,12 +85,10 @@ body{
 }
 
 .edu{
-    background-color: white;
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    border-radius: 20px;
-    margin: 10px 30px 10px 30px;
+    border-radius: 10px;
 }
 
 .heading{
@@ -99,7 +97,6 @@ body{
     justify-content: space-around;
     padding: 10px;
     border-radius: 20px;
-    margin: 10px 30px 10px 30px;
 }
 
 .edu img{
@@ -107,9 +104,12 @@ body{
 }
 
 .clg{
+    width: 45%;
     display: flex;
+    background-color: white;
     flex-direction: row;
-    border-radius: 20px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .clg-text{
