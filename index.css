@@ -1,5 +1,5 @@
 body{
-    background-color:#e0ebeb;
+    background-color:#a3a6a9;
 }
 
 .navbar{
@@ -31,7 +31,7 @@ body{
 }
 
 .ref:hover {
-    background-color:darkgrey;
+    background-color:rgb(218, 208, 208);
     transform: scale(1.02);
 }
 
@@ -138,7 +138,7 @@ body{
 }
 
 .card{
-    background-color: #e6f2ff;
+    background-color: #92a9c1;
     border-radius: 10px;
     margin: 15px;
     padding: 20px;
@@ -172,9 +172,18 @@ body{
 .tech{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1em;
-    color: gray;
+    color: rgb(62, 60, 60);
 }
 
 .pub-text{
     margin-left: 30px;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
 }
