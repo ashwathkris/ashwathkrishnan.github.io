@@ -1,0 +1,448 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    scroll-margin-top: 60px; /* Set this value to the height of your navbar plus a little extra space */
+}
+
+/*NAV BAR CSS*/
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.ref {
+    font-size: large;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
+    transition: background-color 0.5s, color 0.8s;
+    border-radius: 40px;
+}
+
+.ref:hover {
+    background-color: rgb(18, 133, 220);
+    color: white;
+    border-radius: 40px;
+}
+
+.content {
+    padding: 16px;
+    height: 2000px;
+}
+
+/*Introduction CSS*/
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+    padding: 5% 10%; /* Reduced top-bottom padding, adjusted left-right padding */
+    margin: 0 auto;
+    width: 100%;
+}
+
+.intro-content {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+    gap: 1vh; /* Controls the space between elements */
+}
+
+.intro-content h1 {
+    font-size: 10vh;
+    margin: 0; /* Removes default margin */
+}
+
+.intro-content h2 {
+    font-size: 5vh;
+    color: rgb(18, 133, 220);
+    margin: 0; /* Removes default margin */
+}
+
+.intro-content p {
+    margin: 2vh 0; /* Reduced margin for paragraph */
+    font-size: 2.5vh; /* Optional: Adjust font size if needed */
+}
+
+.intro-photo, .intro-content {
+    flex: 1;
+}
+
+.intro-photo img {
+    width: 40vh;
+    height: auto;
+    border-radius: 10%;
+}
+
+#typewriter {
+    border-right: 2px solid black; /* Simulates the blinking cursor */
+    padding-right: 5px; /* Keeps the cursor a little away from the last character */
+    margin-left: 2px; /* Space before the typewriter text starts */
+    white-space: nowrap; /* Ensures text doesn't wrap to a new line */
+    overflow: hidden; /* Keeps the container from expanding horizontally */
+}
+
+#typed-text {
+    font-size: 3vh; /* Adjust the font size as needed */
+    font-weight: bold; /* Optional: Adds emphasis */
+    color: rgb(18, 133, 220);
+    text-align: center; /* Center aligns the text */
+    width: 100%; /* Full width to center the text in the container */
+    display: flex; /* Using flex to center the content vertically and horizontally */
+    align-items: center; /* Center vertically */
+    height: 4vh;
+}
+
+/* Keyframes for blinking cursor effect */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh; /* Reduced padding top */
+}
+
+.social-links a {
+    margin-right: 40px; /* Only add space to the right of each icon */
+    margin-left: 0; /* Remove default left margin */
+}
+
+.social-links a:first-child {
+    margin-left: 0; /* Ensures no left margin on the first link */
+}
+
+.social-links img {
+    width: 6vh; /* Size of social icons */
+    height: auto;
+    border-radius: 30%; /* Rounded corners for icons */
+}
+
+
+/*      ABOUT SECTION       */     
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(142, 184, 217); /* Light background for the section */
+}
+
+.about-description {
+    flex: 1; /* Take up half of the container */
+    padding: 20px;
+    padding-left: 40px; /* Increased left padding for better alignment */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: left; /* Align text to the left */
+    flex-direction: column; /* Stack any multiple elements vertically */
+    color: rgb(0, 0, 0); /* Make text color black */
+    font-size: 1.2em; /* Slightly larger font size */
+    letter-spacing: 0.05em; /* More space between words */
+}
+
+.about-description h1 {
+    padding-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    color: #333;
+}
+
+.education {
+    flex: 1; /* Take up the other half */
+    padding: 20px;
+}
+
+.education h2 {
+    margin-bottom: 20px; /* Space below the education heading */
+    color: #333;
+}
+
+.education-card {
+    display: flex;
+    margin-bottom: 40px; /* Space between cards */
+    align-items: center; /* Align items vertically in the center */
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.education-card img {
+    width: 12vh; /* Fixed width for images */
+    height: auto;
+    margin-right: 20px; /* Space between the image and the text */
+    border-radius: 10%; /* Optional: rounded corners for the images */
+}
+
+.education-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-info h3, .education-info h4, .education-info p {
+    margin: 5px 0; /* Margins for spacing inside the info box */
+}
+
+/*      EXPERIENCE SECTION       */
+
+.experience-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.experience-section h2 {
+    text-align: left;
+    padding-left: 5%;
+    font-size: 3em; /* Makes the heading larger */
+    color: #333; /* Dark grey for better visibility */
+}
+
+.experience-cards {
+    display: flex;
+    flex-direction: column; /* Stacks cards vertically */
+    align-items: center; /* Center cards horizontally */
+}
+
+.card {
+    display: flex;
+    width: 80%; /* Adjust the width as necessary */
+    margin-bottom: 20px; /* Space between cards */
+    background-color: rgb(206, 218, 227);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    align-items: center; /* Align items in the card vertically */
+    border-radius: 10px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensures no overflow from child elements */
+}
+
+.card-image {
+    padding: 0px 5%; /* Adds padding around the logo */
+}
+
+.card-image img {
+    width: 150px; /* Fixed width for logos */
+    height: auto;
+    border-radius: 5px; /* Optional: if you want rounded images */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column; /* Aligns details vertically */
+    align-items: flex-start; /* Aligns content to the left */
+    text-align: left; /* Text aligned to the left */
+    flex-grow: 1; /* Allows the content area to fill remaining space */
+    padding: 15px; /* Adds padding around the text */
+}
+
+.card h3 {
+    font-size: 1.25em; /* Slightly larger font size for the company name */
+    color: #333; /* Dark grey for better visibility */
+    margin-bottom: 5px; /* Reduces space below the header */
+}
+
+.card p {
+    margin: 2px 0; /* Small vertical spacing for paragraphs */
+    line-height: 1.5; /* Improves readability */
+    color: #555; /* Dark gray for text */
+}
+
+.card p.position-title {
+    font-weight: bold; /* Makes the position title bold */
+    color: #222; /* Darker color for emphasis */
+}
+
+.card ul {
+    list-style: none; /* Removes default list styling */
+    padding-left: 20px; /* Indents the list */
+    margin-top: 5px; /* Adds a bit of space above the list */
+}
+
+.card ul li {
+    margin-bottom: 2px; /* Space between list items */
+}
+
+.card ul li::before {
+    content: "- "; /* Adds dash before each list item */
+    color: #333; /* Dark grey for the dash */
+    font-weight: normal; /* Standard weight for dashes */
+}
+
+/* Skills Section */
+
+.skills-section {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(142, 184, 217); /* Light background for the section */
+    
+}
+
+.skills-section h2 {
+    font-size: 2.5em; /* Larger size for main heading */
+    margin-bottom: 40px;
+    font-family:Arial, Helvetica, sans-serif; /* Change to a different font if you prefer */
+    color: #333; /* Darker shade for contrast */
+    display: flex;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
+.skills-cards {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto; /* Allows horizontal scrolling if screen size is small */
+    padding: 20px 0; /* Adds space above and below the cards */
+    margin-bottom: 5%;
+}
+
+.skill-card {
+    width: 240px; /* Adjusted width to fit new image sizes */
+    margin: 10px;
+    padding: 15px; /* Increased padding */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    align-items: center; /* Centers items vertically */
+    display: flex;
+    flex-direction: column; /* Stacks content vertically */
+}
+
+.skill-card h3 {
+    font-size: 1.75em; /* Increased font size for titles */
+    margin-bottom: 45px; /* Increased space below title */
+    font-family: 'Helvetica Neue', sans-serif; /* Example of a different font */
+    color: #333;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Maintains two columns */
+    grid-gap: 10px; /* Increased space between images */
+    justify-content: center; /* Centers grid in the card */
+    margin-bottom: 20%;
+}
+
+.skill-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain; /* Adjusts the image to fit within the frame without cropping */
+    border-radius: 5px;
+    display: block;
+    margin: auto; /* Centers the image in the container when there's extra space */
+    background: #fff; /* Optional: sets a background color in case of letterboxing */
+}
+
+.site-footer {
+    text-align: center;  /* Centers the text inside the footer */
+    padding: 20px 10px;  /* Adds padding inside the footer for spacing */
+    background-color: #f2f2f2;  /* Sets a light background color for the footer */
+    color: #666;  /* Sets the text color */
+    font-size: 0.8em;  /* Sets a smaller font size for the footer text */
+    border-top: 1px solid #ddd;  /* Adds a subtle border top for stylistic separation */
+}
+
+/* PROJECTS SECTION */
+
+.projects-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center aligns the project divs vertically within the section */
+}
+
+.projects-section h2 {
+    font-size: 2.5em; /* Larger size for main heading */
+    margin-bottom: 40px;
+    font-family:Arial, Helvetica, sans-serif; /* Change to a different font if you prefer */
+    color: #333; /* Darker shade for contrast */
+    display: flex;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #d1e0e8;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.project-image, .project-details {
+    flex: 1; /* Ensures that each takes up half the space of the project container */
+}
+
+.project:nth-child(even) .project-image {
+    order: 2; /* Moves image to the right on even projects */
+}
+
+.project:nth-child(even) .project-details {
+    order: 1; /* Moves details to the left on even projects */
+}
+
+.project-image img {
+    width: 90%; /* Ensures the image takes full width of its container */
+    height: auto;
+    border-radius: 8px;
+    max-width: 600px; /* Optional: you might set a max-width to prevent the image from becoming too large */
+}
+
+.project-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the details vertically */
+    text-align: left;
+}
+
+.project-details h3 {
+    color: #333;
+}
+
+.project-description {
+    margin-bottom: 30px; /* Adjusted for a consistent look */
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-self: start; /* Aligns the button to the start of the project details */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

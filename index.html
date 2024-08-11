@@ -1,65 +1,262 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Ashwath Krishnan</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
+<html lang="en">
 
-    <body>
-        <div class="navbar">
-            <div class="name">
-                <p href="index.html">Ashwath Krishnan</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwath Krishnan</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="icons/ak.jpg" type="image/jpg">
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <div class="navbar">
+        <nav class="nav">
+            <a class="ref" href="#about">About</a>
+            <a class="ref" href="#experience">Experience</a>
+            <a class="ref" href="#skills">Skills</a>
+            <a class="ref" href="#projects">Projects</a>
+            <a class="ref" href="https://drive.google.com/file/d/1Nj-BDJnPhXf6jPL4PZFqVUGmj0IQRjbl/view" target="_blank">Resume</a>
+        </nav>
+    </div>
+
+    <!-- INTRODUCTION -->
+    <div class="intro-section section" >
+        <div class="intro-photo">
+            <img src="icons/dp.png" alt="Ashwath Krishnan">
+        </div>
+        <div class="intro-content">
+            <h2>Hi There! I'm</h2>
+            <h1>Ashwath Krishnan</h1>
+            <div id="typed-text"><span id="typewriter"></span></div>
+            <div class="social-links">
+                <!-- Icons linked to your social media accounts -->
+                <a href="https://www.linkedin.com/in/ashwath-krishnan45/" target="_blank"><img src="socials/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/ashwathkris" target="_blank"><img src="socials/github.png" alt="GitHub"></a>
+                <a href="https://twitter.com/yourusername" target="_blank"><img src="socials/scholar.png" alt="Google Scholar"></a>
+                <a href="mailto:ashwathkrishnan45@gmail.com" target="_blank"><img src="socials/gmail.webp" alt="G-Mail"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div id="about" class="about-section section">
+        <div class="about-description">
+            <h1>About Me?</h1>
+            <p>
+                I'm an aspiring software engineer and a Master's student at the University of Illinois at Urbana-Champaign, majoring in Computer Science. 
+                I am currently an iOS developer at the <strong>xAbility Lab</strong> in UIUC, where I'm actively developing a health tracking app designed to encourage blind people to exercise, combining my technical skills with a passion for creating socially beneficial technology. 
+                As I look towards the future, I am seeking full-time opportunities starting <strong>June 2025</strong>, where I aim to apply my expertise in new and challenging environments.
+            </p>
+        </div>
+        <div class="education">
+            <h2>Education</h2>
+            <div class="education-card">
+                <img src="university/uiuc.png" alt="University of Illinois, Urbana-Champaign">
+                <div class="education-info">
+                    <h3>University of Illinois, Urbana-Champaign</h3>
+                    <h4>Master's in Computer Science</h4>
+                    <p>2024 - May 2025 (Expected)</p>
+                </div>
+            </div>
+            <div class="education-card">
+                <img src="university/pesu.jpeg" alt="PES University">
+                <div class="education-info">
+                    <h3>PES University</h3>
+                    <h4>Bachelor of Technology in Computer Science</h4>
+                    <p>2019 - 2023 (Graduated)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXPERIENCES SECTION -->
+    <div id="experience" class="experience-section section">
+        <h2>My Experiences</h2>
+        <div class="experience-cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="experience/lab.svg" alt="Company 2 Logo">
+                </div>
+                <div class="card-content">
+                    <h3>xAbility Lab @ UIUC</h3>
+                    <p><strong>iOS Developer</strong></p>
+                    <p>Tenure: 2019-2021</p>
+                    <ul>
+                        <li>Task or responsibility 1</li>
+                        <li>Task or responsibility 2</li>
+                        <li>Task or responsibility 3</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-image">
+                    <img src="experience/zebra.png" alt="Company 2 Logo">
+                </div>
+                <div class="card-content">
+                    <h3>Zebra Technologies</h3>
+                    <p><strong>Software Development Intern</strong></p>
+                    <p>Tenure: 2019-2021</p>
+                    <ul>
+                        <li>Task or responsibility 1</li>
+                        <li>Task or responsibility 2</li>
+                        <li>Task or responsibility 3</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-image">
+                    <img src="experience/soroco.png" alt="Company 2 Logo">
+                </div>
+                <div class="card-content">
+                    <h3>Soroco</h3>
+                    <p><strong>Software Engineer Intern</strong></p>
+                    <p>Tenure: 2019-2021</p>
+                    <ul>
+                        <li>Task or responsibility 1</li>
+                        <li>Task or responsibility 2</li>
+                        <li>Task or responsibility 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SKILLS SECTION -->
+    <div id="skills" class="skills-section section">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-cards">
+            
+            <div class="skill-card">
+                <h3>Languages</h3>
+                <div class="images-grid">
+                    <img src="languages/java.svg" alt="Skill 1">
+                    <img src="languages/python.png" alt="Skill 2">
+                    <img src="languages/javascript.png" alt="Skill 3">
+                    <img src="languages/C.png" alt="Skill 4">
+                </div>
             </div>
 
-            <nav class="nav">
-                <a class= "ref" href="index.html">Home</a>
-                <a class= "ref" href="projects.html">Projects</a>
-                <a class= "ref" href="research.html">Research</a>
-                <a class= "ref" href="https://drive.google.com/file/d/1Nj-BDJnPhXf6jPL4PZFqVUGmj0IQRjbl/view">Resume</a>
-            </nav>
+            <div class="skill-card">
+                <h3>Front-End</h3>
+                <div class="images-grid">
+                    <img src="frontend/react.svg" alt="Skill 1">
+                    <img src="frontend/html.png" alt="Skill 2">
+                    <img src="frontend/css.png" alt="Skill 3">
+                    <img src="frontend/swiftui.png" alt="Skill 4">
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>Back-End</h3>
+                <div class="images-grid">
+                    <img src="backend/express.png" alt="Skill 1">
+                    <img src="backend/fastapi.avif" alt="Skill 2">
+                    <img src="backend/flask.png" alt="Skill 3">
+                    <img src="backend/postgres.png" alt="Skill 4">
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <div class="images-grid">
+                    <img src="tools/git.png" alt="Skill 1">
+                    <img src="tools/github.png" alt="Skill 2">
+                    <img src="tools/docker.png" alt="Skill 3">
+                    <img src="tools/kube.png" alt="Skill 4">
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>Cloud</h3>
+                <div class="images-grid">
+                    <img src="cloud/aws.png" alt="Skill 1">
+                    <img src="cloud/gcp.png" alt="Skill 2">
+                    <img src="cloud/azure.png" alt="Skill 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="projects-section section">
+        <h2>Featured Projects</h2>
+        <div class="project">
+            <div class="project-image">
+                <img src="icons/course-registration.png" alt="course-registration">
+            </div>
+            <div class="project-details">
+                <h3>Enrollmints</h3>
+                <p class="tech-stack">ReactJS, Flask, NoSQL, GCP</p>
+                <p class="project-description">Developed an improved system for Course Registration for Computer Science related degrees at UIUC. Implemented features such as course and professor reviews, wait lists, course prerequisites, and workloads. Built an interactive dashboard to summarize degree requirements, credits to be taken, and subject breadths to be covered</p>
+                <a href="http://link-to-project1.com" target="_blank" class="button">Check it out!</a>
+            </div>
+        </div>
+        
+        <div class="project">
+            <div class="project-image">
+                <img src="icons/gym-instructor.png" alt="Project 1 Screenshot">
+            </div>
+            <div class="project-details">
+                <h3>Real-Time Gym Instructor</h3>
+                <p class="tech-stack">Tech Stack: ReactJS, JavaScript, Flask, MediaPipe</p>
+                <p class="project-description">Engineered a posture corrector to deliver real-time feedback, achieving a 34% improvement in posture alignment. 
+                    Leveraged Mediapipe for real-time detection of 32 human joints to analyze Push-Ups, Planks, and Bicep curls
+                    Established precise joint angle threshold to refine posture correction, tailored to specific exercises and workouts 
+                    Analyzed real-time data and joint angles to provide appropriate corrections to the user for each rep</p>
+                <a href="https://github.com/ashwathkris/Real-Time-Gym-Instructor" target="_blank" class="button">Check it out!</a>
+            </div>
         </div>
 
-        <div class = "intro">
-            <div class="left">
-                <div class="para">
-                    Hi! I am a Master of Computer Science student at the University of Illinois Urbana-Champaign. I completed my Bachelor of Technology in Computer Science at PES University, Bangalore, India. My research focusses on HCI, Interactive Computing and making technology more accessible. <br><br>I am currently a Graduate Assistant at the iSchool, working with Dr. Soyoung Choi and Dr. Jooyoung Seo.  <br><br>
-                </div>
-                <div class="links">
-                    <a class="social" href="https://www.linkedin.com/in/ashwath-krishnan45/"> <img src="linkedin.png"> </a>
-                    <a class="social" href="https://github.com/ashwathkris"> <img src="github.png"> </a>
-                    <a class="social" href="https://scholar.google.com/citations?user=3JgZyocAAAAJ&hl=en&oi=sra"> <img src="scholar.png"> </a>
-                    <!--<a class="social" href="https://leetcode.com/Ash490/"> <img src="leetcode.png"> </a>-->
-                </div>
-            </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2024 Ashwath Krishnan. All rights reserved.</p>
+    </footer>
 
-            <div class="right">
-                <img src="dp.png">
-            </div>
-        </div>
+    <script>
+        const texts = ['Student', 'Programmer', 'iOS Developer', 'Full-Stack Developer'];
+        let count = 0;
+        let index = 0;
+        let currentText = '';
+        let letter = '';
+        let isDeleting = false;
 
-        <p style="font-size: 40px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-left: 10%; font-weight: lighter;">Education</p>
-            
-        <div class="edu">
-                <div class="clg">
-                    <img src="uiuc.png" width="90px" height="90px">
-                    <div class="clg-text">
-                        <b>University of Illinois Urbana-Champaign</b>
-                        <p>Master of Computer Science</p>
-                        <i>Present - June 2025 (Expected)</i>
-                    </div>
-                </div>
+        (function type() {
+            if (count === texts.length) {
+                count = 0; // Reset to loop again
+            }
+            currentText = texts[count];
+            if (!isDeleting) {
+                letter = currentText.slice(0, ++index);
+            } else {
+                letter = currentText.slice(0, --index);
+            }
 
-                <div class="clg">
-                    <img src="pesu.jpeg" height="100px">
-                        <div class="clg-text">
-                            <b>PES University</b>
-                            <p>Bachelor of Technology, Computer Science and Engineering</p>
-                            <i>2019 - 2023</i>
-                        </div>
-                    </div>
-            </div>
+            document.getElementById('typewriter').textContent = letter;
 
-            
+            if (!isDeleting && letter.length === currentText.length) {
+                // Start removing text
+                isDeleting = true;
+                setTimeout(type, 1000); // Wait 2 seconds before start deleting
+            } else if (isDeleting && letter.length === 0) {
+                isDeleting = false;
+                count++; // Move to the next text
+                setTimeout(type, 500); // Pause before start typing next text
+            } else {
+                let typeSpeed = 100;
+                if (isDeleting) {
+                    typeSpeed /= 2; // Deleting is faster
+                }
+                setTimeout(type, typeSpeed);
+            }
+        })();
+    </script>
 
-    </body>
+</body>
+
 </html>
